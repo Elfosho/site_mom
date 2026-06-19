@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Mama's Crafts — marketplace</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="bg-rose-50 text-slate-900 antialiased">
+    <header class="bg-[url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1600&q=60')] bg-cover bg-center text-white">
+      <div class="backdrop-brightness-50">
+        <div class="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
+          <div class="flex items-center gap-4">
+            <div class="text-2xl font-playfair">Mama's Crafts</div>
+            <nav class="hidden md:flex gap-6 ml-6">
+              <a class="hover:underline" href="#">Home</a>
+              <a class="hover:underline" href="#about">About</a>
+              <a class="hover:underline" href="#shop">Shop</a>
+              <a class="hover:underline" href="#workshops">Workshops</a>
+              <a class="hover:underline" href="#blog">Blog</a>
+              <a class="hover:underline" href="#contact">Contact</a>
+            </nav>
+          </div>
+          <div class="flex items-center gap-4">
+            <button class="border rounded-full p-2 bg-white/10">🔍</button>
+            <button class="border rounded-full p-2 bg-white/10">👤</button>
+            <button class="border rounded-full p-2 bg-white/10">🛒</button>
+          </div>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-6 pb-20">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center py-20">
+            <div class="text-left text-white">
+              <h1 class="text-4xl md:text-5xl font-playfair font-semibold leading-tight">Creating Magic.\nRaising Babies.\nHealing Ourselves.</h1>
+              <p class="mt-6 max-w-md text-lg">For the moms who are tired. Tired of the 9-5. Tired of doing it all. Here, we create beautiful, spiritual art with our kids and build a life with more time, more peace, and more of what matters.</p>
+              <div class="mt-6">
+                <a class="inline-block bg-rose-300 text-rose-900 px-5 py-3 rounded-md font-medium" href="#">Join Our Mama Circle</a>
+              </div>
+            </div>
+            <div class="hidden md:block">
+              <!-- hero right could hold illustration -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 -mt-12">
+      <section id="about" class="bg-white rounded-xl shadow-md p-8">
+        <h2 class="text-2xl font-playfair mb-4">About Mama's Crafts</h2>
+        <p class="text-slate-700">We're three moms on a mission to create a lifestyle filled with intention, creativity, and freedom. Through spiritual art, handmade goods, and healing practices, we're building a business that allows us to be more present for our babies and ourselves.</p>
+
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="text-center p-4">
+            <div class="text-4xl">🌙</div>
+            <h3 class="font-semibold mt-2">Spiritual Living</h3>
+            <p class="text-sm text-slate-600 mt-2">We honor the moon, the seasons, and our inner magic.</p>
+          </div>
+          <div class="text-center p-4">
+            <div class="text-4xl">🎨</div>
+            <h3 class="font-semibold mt-2">Creative Expression</h3>
+            <p class="text-sm text-slate-600 mt-2">Art is our therapy. We create to heal, inspire, and connect.</p>
+          </div>
+          <div class="text-center p-4">
+            <div class="text-4xl">🌿</div>
+            <h3 class="font-semibold mt-2">Natural Healing</h3>
+            <p class="text-sm text-slate-600 mt-2">Plants, stones, and rituals to nourish our souls.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="mamas" class="mt-10">
+        <h2 class="text-2xl font-playfair mb-6">Meet The Mamas</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <article class="bg-white rounded-lg p-6 text-center shadow">
+            <img class="w-32 h-32 mx-auto rounded-full object-cover" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=60" alt="Mama">
+            <h3 class="mt-4 font-semibold">Laura Mama</h3>
+            <p class="text-sm text-slate-600">Lover of stars, moons, and sunsets. Creates celestial art and guides for gentle parenting.</p>
+            <a class="inline-block mt-4 text-rose-600" href="#">View profile</a>
+          </article>
+
+          <article class="bg-white rounded-lg p-6 text-center shadow">
+            <img class="w-32 h-32 mx-auto rounded-full object-cover" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=60" alt="Mama">
+            <h3 class="mt-4 font-semibold">Bloom Mama</h3>
+            <p class="text-sm text-slate-600">Motherhood lover and free spirit. Creates whimsical, magical art for home and heart.</p>
+            <a class="inline-block mt-4 text-rose-600" href="#">View profile</a>
+          </article>
+
+          <article class="bg-white rounded-lg p-6 text-center shadow">
+            <img class="w-32 h-32 mx-auto rounded-full object-cover" src="https://images.unsplash.com/photo-1524503033411-c9566986fc8f?auto=format&fit=crop&w=400&q=60" alt="Mama">
+            <h3 class="mt-4 font-semibold">Earth Mama</h3>
+            <p class="text-sm text-slate-600">Plant whisperer and healer. Crafts natural objects and herb-based goods.</p>
+            <a class="inline-block mt-4 text-rose-600" href="#">View profile</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="shop" class="mt-10">
+        <h2 class="text-2xl font-playfair mb-6">Shop Our Creations</h2>
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+          <div class="bg-white rounded p-3 text-center shadow">
+            <img class="h-28 w-full object-cover rounded" src="https://images.unsplash.com/photo-1542834369-f10ebf06d3cb?auto=format&fit=crop&w=600&q=60" alt="product">
+            <div class="mt-2 text-sm">Moon Wall Hanging</div>
+            <div class="font-semibold">$45</div>
+          </div>
+
+          <div class="bg-white rounded p-3 text-center shadow">
+            <img class="h-28 w-full object-cover rounded" src="https://images.unsplash.com/photo-1544744813-8e3b4f1f3f0f?auto=format&fit=crop&w=600&q=60" alt="product">
+            <div class="mt-2 text-sm">Magic Mushroom Decor</div>
+            <div class="font-semibold">$35</div>
+          </div>
+
+          <div class="bg-white rounded p-3 text-center shadow">
+            <img class="h-28 w-full object-cover rounded" src="https://images.unsplash.com/photo-1544350395-2f8b3c1a6f6d?auto=format&fit=crop&w=600&q=60" alt="product">
+            <div class="mt-2 text-sm">Healing Stone Set</div>
+            <div class="font-semibold">$28</div>
+          </div>
+
+          <div class="bg-white rounded p-3 text-center shadow">
+            <img class="h-28 w-full object-cover rounded" src="https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=600&q=60" alt="product">
+            <div class="mt-2 text-sm">Botanical Art Print</div>
+            <div class="font-semibold">$22</div>
+          </div>
+
+          <div class="bg-white rounded p-3 text-center shadow">
+            <img class="h-28 w-full object-cover rounded" src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=600&q=60" alt="product">
+            <div class="mt-2 text-sm">Mama Ritual Candle</div>
+            <div class="font-semibold">$28</div>
+          </div>
+        </div>
+
+        <div class="mt-6 text-center">
+          <a class="inline-block bg-rose-300 text-rose-900 px-4 py-2 rounded-md" href="#">Visit Our Shop</a>
+        </div>
+      </section>
+
+      <footer id="contact" class="mt-16 bg-slate-900 text-white rounded-lg p-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div>
+            <h4 class="font-semibold">Mama's Crafts</h4>
+            <p class="text-sm text-slate-300 mt-2">Creating a life of freedom, creativity, and deep connection with our children.</p>
+          </div>
+          <div>
+            <h4 class="font-semibold">Quick Links</h4>
+            <ul class="text-sm text-slate-300 mt-2 space-y-1">
+              <li>About</li>
+              <li>Shop</li>
+              <li>Workshops</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold">Stay Connected</h4>
+            <p class="text-sm text-slate-300 mt-2">Join our email list for inspiration, discounts, and monthly moon letters.</p>
+            <div class="mt-3">
+              <input class="rounded-l px-3 py-2 text-slate-900" placeholder="Email" />
+              <button class="bg-rose-300 text-rose-900 px-3 py-2 rounded-r">Subscribe</button>
+            </div>
+          </div>
+        </div>
+        <div class="mt-6 text-center text-sm text-slate-400">© 2026 Mama's Crafts Collective</div>
+      </footer>
+    </main>
+
+  </body>
+</html>
