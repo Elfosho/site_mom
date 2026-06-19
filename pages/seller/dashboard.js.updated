@@ -1,0 +1,62 @@
+import { useEffect, useState } from 'react'
+
+export default function SellerDashboard(){
+  const [products,setProducts] = useState([])
+
+  useEffect(()=>{
+    (async ()=>{
+      const token = await getToken()
+      if(!token) return
+      const res = await fetch('/api/products?seller=me',{ headers:{ authorization:`Bearer ${token}` } })
+      const data = await res.json()
+      setProducts(data.data || [])
+    })()
+  },[])
+
+  const getToken = async ()=>{
+    // get token from Supabase client in browser
+    try{
+      const { createClient } = await import('@supabase/supabase-js')
+      const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL||'', process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY||'')
+      const { data } = await supabase.auth.getSession()
+      return data?.session?.access_token
+    }catch(err){ console.error(err); return null }
+  }
+
+  const handleCreate = (res)=>{
+    // refresh list
+    (async ()=>{
+      const token = await getToken()
+      const r = await fetch('/api/products?seller=me',{ headers:{ authorization:`Bearer ${token}` } })
+      const d = await r.json()
+      setProducts(d.data || [])
+    })()
+  }
+
+  return (
+    <div className="max-w-6xl mx-auto px-6 py-12">
+      <h1 className="text-2xl font-playfair mb-6">Seller dashboard</h1>
+      <div className="grid md:grid-cols-2 gap-6">
+        <div>
+          <h3 className="font-semibold mb-4">Add new product</h3>
+          <dynamic-product-form onSubmit={handleCreate} />
+        </div>
+        <div>
+          <h3 className="font-semibold mb-4">Your products</h3>
+          <div className="grid gap-4">
+            {products.map(p=> (
+              <div key={p.id} className="bg-white p-4 rounded shadow flex gap-4">
+                <img src={p.images?.[0]||'/placeholder.jpg'} className="w-24 h-24 object-cover rounded" />
+                <div>
+                  <div className="font-semibold">{p.title}</div>
+                  <div className="text-sm text-slate-600">${p.price}</div>
+                  <div className="text-sm text-slate-500">status: {p.status}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
