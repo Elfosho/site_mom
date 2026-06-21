@@ -36,21 +36,21 @@ export default function Home(){
         <h2 className="text-2xl font-playfair mb-6">Meet The Mamas</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <article className="bg-white rounded-lg p-6 text-center shadow">
-            <img className="w-32 h-32 mx-auto rounded-full object-cover" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=60" alt="Mama">
+            <img className="w-32 h-32 mx-auto rounded-full object-cover" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=60" alt="Mama" />
             <h3 className="mt-4 font-semibold">Laura Mama</h3>
             <p className="text-sm text-slate-600">Lover of stars, moons, and sunsets. Creates celestial art and guides for gentle parenting.</p>
             <a className="inline-block mt-4 text-rose-600" href="#">View profile</a>
           </article>
 
           <article className="bg-white rounded-lg p-6 text-center shadow">
-            <img className="w-32 h-32 mx-auto rounded-full object-cover" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=60" alt="Mama">
+            <img className="w-32 h-32 mx-auto rounded-full object-cover" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=60" alt="Mama" />
             <h3 className="mt-4 font-semibold">Bloom Mama</h3>
             <p className="text-sm text-slate-600">Motherhood lover and free spirit. Creates whimsical, magical art for home and heart.</p>
             <a className="inline-block mt-4 text-rose-600" href="#">View profile</a>
           </article>
 
           <article className="bg-white rounded-lg p-6 text-center shadow">
-            <img className="w-32 h-32 mx-auto rounded-full object-cover" src="https://images.unsplash.com/photo-1524503033411-c9566986fc8f?auto=format&fit=crop&w=400&q=60" alt="Mama">
+            <img className="w-32 h-32 mx-auto rounded-full object-cover" src="https://images.unsplash.com/photo-1524503033411-c9566986fc8f?auto=format&fit=crop&w=400&q=60" alt="Mama" />
             <h3 className="mt-4 font-semibold">Earth Mama</h3>
             <p className="text-sm text-slate-600">Plant whisperer and healer. Crafts natural objects and herb-based goods.</p>
             <a className="inline-block mt-4 text-rose-600" href="#">View profile</a>
